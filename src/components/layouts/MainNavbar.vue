@@ -1,7 +1,9 @@
 <template>
   <div class="flex justify-between items-center px-32  h-24">
     <div class="top">
-      <p class="logo text-blue-200 text-3xl">CINESYNC</p>
+      <p class="logo text-blue-200 text-3xl">
+        <a href="/">CINESYNC</a>
+      </p>
     </div>
     <div>
       <ul class="flex gap-x-8 items-center nav-el text-xl text-white py-4 font-semibold">
