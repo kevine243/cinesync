@@ -8,7 +8,7 @@
       :breakpoints="{ '1199px': '80vw', '575px': '90vw' }">
       <div class="card p-5 space-y-2">
         <img :src="`https://image.tmdb.org/t/p/w500/${props.movie.poster_path}`" alt="" class="w-full h-1/2">
-        <p>{{ props.movie.release_date }}</p>
+        <p >Sortie le  <span  class="font-semibold">{{ props.movie.release_date }}</span></p>
         <p>{{ props.movie.overview }}</p>
         <p class="bg-gray-700 rounded text-white p-2 block w-28">{{ props.movie.vote_average }} sur 10</p>
       </div>

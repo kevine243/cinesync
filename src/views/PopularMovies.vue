@@ -4,7 +4,7 @@
       <h1 class="lg:text-5xl text-2xl md:text-3xl font-bold">Films populaires Aujourd'hui</h1>
     </div>
     <div class="search pt-2 pb-4 ">
-      <SearchBar  @search="searchMovies" />
+      <SearchBar @search="searchMovies" />
     </div>
     <div class="movies grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 space-y-8">
       <div class="movie-card p-2 shadow-lg rounded-lg relative" v-for="movie in movies" :key="movie.id"
@@ -13,7 +13,10 @@
           class="w-full object-cover py-1" />
         <div class="card-text p-5">
           <h3 class="text-2xl font-bold">{{ movie.title }}</h3>
-          <p>{{ movie.release_date }}</p>
+          <p>Sortie le : <span class="font-semibold">{{ new Date(movie.release_date).toLocaleDateString('fr-FR', {
+            year: 'numeric', month:
+              'long', day: 'numeric'
+          }) }}</span></p>
           <p>{{ truncateOverview(movie.overview) }}</p>
           <p
             class="absolute -top-2 -right-2 bg-black text-white border-4 border-red-500 rounded-full h-12 w-12 flex items-center justify-center p-7 font-bold">
