@@ -1,10 +1,10 @@
 <template>
   <div class="h-screen">
     <div class="popular-movies">
-      <h1 class="text-5xl font-bold py-8">Films populaires Aujourd'hui</h1>
+      <h1 class="lg:text-5xl text-2xl md:text-3xl font-bold py-8">Films populaires Aujourd'hui</h1>
     </div>
-    <div class="search pt-2 pb-6">
-      <SearchBar @search="searchMovies" />
+    <div class="search pt-2 pb-6 ">
+      <SearchBar  @search="searchMovies" />
     </div>
     <div class="movies grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 space-y-8">
       <div class="movie-card p-2 shadow-lg rounded-lg relative" v-for="movie in movies" :key="movie.id"
@@ -20,7 +20,7 @@
             {{ movie.vote_average }}
           </p>
         </div>
-        <MovieModal :movie="selectedMovie" />
+        <MovieModal :movie="movie" />
       </div>
     </div>
   </div>

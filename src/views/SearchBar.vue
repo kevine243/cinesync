@@ -1,8 +1,8 @@
 <template>
   <div>
     <IconField>
-      <InputIcon class="pi pi-search" />
-      <InputText v-model="query" @input="onSearch" placeholder="Rechercher votre film preferé" />
+      <InputIcon class="pi pi-search " />
+      <InputText class="w-full" v-model="query" @input="onSearch" placeholder="Rechercher votre film preferé" />
     </IconField>
   </div>
 </template>

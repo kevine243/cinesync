@@ -1,5 +1,5 @@
 <template>
-  <div id="home" class="h-screen px-32">
+  <div id="home" class="h-screen px-6 md:px-24 lg:px-32">
     <PopularMovies />
   </div>
 </template>
