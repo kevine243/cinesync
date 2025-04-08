@@ -1,6 +1,6 @@
 <template>
   <div class="">
-    <div class="popular-movies">
+    <div class="popular-movies pt-2 pb-4">
       <h1 class="lg:text-5xl text-2xl md:text-3xl font-bold">Films populaires Aujourd'hui</h1>
     </div>
     <div class="search pt-2 pb-4 ">
