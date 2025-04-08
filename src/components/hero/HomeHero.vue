@@ -1,7 +1,7 @@
 <template>
   <div class="h-full lg:h-screen w-full">
     <div
-      class="h-full main-text w-full  lg:w-6/12 text-white  px-6 md:px-24 lg:px-32 text-center md:text-left  space-y-4 text-shadow-2xs py-44 ">
+      class="h-full main-text w-full  lg:w-8/12 text-white  px-6 md:px-24 lg:px-32 text-center md:text-left  space-y-4 text-shadow-2xs py-44 ">
       <h1 class="md:text-6xl text-2xl font-bold ">TROUVE TON FILM PREFERE</h1>
       <p>Plongez dans notre base de données ultime de films ! Que vous soyez fan de blockbusters, de classiques
         intemporels

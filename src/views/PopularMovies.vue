@@ -1,9 +1,9 @@
 <template>
   <div class="">
     <div class="popular-movies">
-      <h1 class="lg:text-5xl text-2xl md:text-3xl font-bold py-4">Films populaires Aujourd'hui</h1>
+      <h1 class="lg:text-5xl text-2xl md:text-3xl font-bold">Films populaires Aujourd'hui</h1>
     </div>
-    <div class="search pt-2 pb-6 ">
+    <div class="search pt-2 pb-4 ">
       <SearchBar  @search="searchMovies" />
     </div>
     <div class="movies grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 space-y-8">
