@@ -1,5 +1,5 @@
 <template>
-  <div class="hero h-screen">
+  <div class="hero">
     <MainNavbar />
     <HomeHero />
   </div>

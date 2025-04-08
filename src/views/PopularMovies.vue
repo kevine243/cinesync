@@ -1,7 +1,7 @@
 <template>
-  <div class="h-screen">
+  <div class="">
     <div class="popular-movies">
-      <h1 class="lg:text-5xl text-2xl md:text-3xl font-bold py-8">Films populaires Aujourd'hui</h1>
+      <h1 class="lg:text-5xl text-2xl md:text-3xl font-bold py-4">Films populaires Aujourd'hui</h1>
     </div>
     <div class="search pt-2 pb-6 ">
       <SearchBar  @search="searchMovies" />
