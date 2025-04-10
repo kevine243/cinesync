@@ -12,7 +12,7 @@ export const useMovieStore = defineStore("movie", () => {
   });
 
   const getPopularMovies = async () => {
-    options.value.url = `https://api.themoviedb.org/3/movie/popular?language=fr-FR&page=1`;
+    options.value.url = `https://api.themoviedb.org/3/movie/popular?language=en-EN&page=1`;
     try {
       const response = await fetch(options.value.url, options.value);
       if (!response.ok) {
@@ -28,7 +28,7 @@ export const useMovieStore = defineStore("movie", () => {
   };
 
   const searchMovies = async (query) => {
-    options.value.url = `https://api.themoviedb.org/3/search/movie?query=${query}&language=fr-FR`;
+    options.value.url = `https://api.themoviedb.org/3/search/movie?query=${query}&language=en-En`;
     try {
       const response = await fetch(options.value.url, options.value);
       if (!response.ok) {
